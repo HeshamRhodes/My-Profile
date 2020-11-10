@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+    <!-- picture and name div in main profile page -->
+    <div class="first_main">
+        <div style="display: inline;">
+            <img src="https://www.upwork.com/profile-portraits/c1rkb4-WtfuydDZqSF6ekxo5JWcFH0OqRlS7Lr-3wt9bP-86RhVl_dkjfNs_OmyHWq" class="self_img">
+        </div>
+        <div class="name_profession">
+            <h1 class="name">Hesham A. Abdelgawad</h1>
+            <p class="profession">Kafr El-Sheikh STEM High School Student</p>
+        </div>
+    </div>
+    <div class="second_second">
+        <div class="second_main">
+            <div class="email_container">
+                <img class="email" src="data:image/png;base64,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">
+                <span class="e-mail">E-mail</span>
+                <a href="mailto:Hesham.1818049@stemksheikh.moe.edu.eg?" class="email_text" style="display: block;">Hesham.1818049@stemksheikh.moe.edu.eg</a>
+            </div>
+            <br>
+            <div class="phone_container">
+                <img class="phone_img" src="https://icon-library.com/images/phone-number-icon/phone-number-icon-28.jpg">
+                <span class="number">Phone Number</span>
+                <a class="number_text" href="tel:+21065645364" style="display: block;">+201065645364</a>
+            </div>
+            <br>
+            <div class="address_container">
+                <img class="address_img" src="https://i.pinimg.com/originals/f0/a4/17/f0a4170e43fae6a84ff990b6df105199.png">
+                <span class="address">Address</span>
+                <a class="address_text" href="https://www.google.com/maps/place/Shabas+Umayyir,+Qazman,+Qillin,+Kafr+El+Sheikh+Governorate/@31.0959826,30.7836798,15z/data=!3m1!4b1!4m5!3m4!1s0x14f65184d5898895:0xfb8ee40e6c0bb638!8m2!3d31.098455!4d30.7929719" style="display: block;">Egypt/Kafr El-Sheikh/Qallin/Shabas Eimer</a>
+            </div>
+        </div>
+        <div class="third_main">
+            <h1>Biography</h1>
+            <p style="font-size: 19px; line-height: 30px;">I was born on December 15, 2003, in Egypt. I am still an Egyptian High school student in my senior year. I am the chairman of TEDx STEM School KFS. Also, I am the founder of the technology club in my high school- Kafr El-Sheikh STEM high school. I participated in ISEF competition two consecutive times and got a certificate in each one. I also work as a python tutor in some organizations.</p>
+        </div>
+    </div>
+{% endblock %}

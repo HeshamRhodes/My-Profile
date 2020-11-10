@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/main.css">
+    <title>{{title}}</title>
+
+    <style>
+      .bg-steel {
+        background-color: #333;
+      }
+      .nav_item{
+        color: white;
+      }
+    </style>
+    
+    {% if title == "Main profile"%}
+      <style>
+        .main{
+          color: #ff2024;
+        }
+      </style>
+    {% endif %}
+    {% if title == "My Experience"%}
+      <style>
+        .experience{
+          color:  #ff2024;
+        }
+      </style>
+    {% endif %}
+    {% if title == "My Achievements"%}
+      <style>
+        .achievements{
+          color:  #ff2024;
+        }
+      </style>
+    {% endif %}
+    {% if title == "My Activities"%}
+      <style>
+        .activities{
+          color:  #ff2024;
+        }
+      </style>
+    {% endif %}
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+          <div class="container">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="static/rhodes college logo.png" style="width: 140px; margin-left: -9%" class="bee">
+            <div class="collapse navbar-collapse" id="navbarToggle">
+              <div class="navbar-nav mr-auto" id="content">
+                <a class="nav_item main" href="/">Main Profile</a>
+                <a class="nav_item experience" href ="/Experience">Experience</a>
+                <a class="nav_item achievements" href="/Achievements">Achievements</a>
+                <a class="nav_item activities" href="/Activities">Activities & courses</a>
+              </div>
+              <div class="navbar-nav" style="margin-right: -100px;">
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      {% block content %}{% endblock %}
+  
+  
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
